@@ -47,7 +47,7 @@ nav a:hover { text-shadow: 0 0 10px black; }
     gap: 30px;
 }
 
-/* LEFT COLUMN */
+/* ================= LEFT COLUMN ================= */
 .left-column {
     width: 25%;
     display: flex;
@@ -55,7 +55,7 @@ nav a:hover { text-shadow: 0 0 10px black; }
     gap: 20px;
 }
 
-/* CAT PANEL */
+/* PANEL DEL GATO */
 .cat-panel {
     background-color: #ff0000;
     color: yellow;
@@ -91,7 +91,7 @@ nav a:hover { text-shadow: 0 0 10px black; }
     font-size: 0.9em;
 }
 
-/* MAIN COLUMN */
+/* ================= MAIN COLUMN ================= */
 .main-column {
     flex: 1;
 }
@@ -112,7 +112,7 @@ nav a:hover { text-shadow: 0 0 10px black; }
     border-radius: 6px;
 }
 
-/* WRITING SPACE */
+/* ESPACIO DE ESCRITURA */
 .writing-space {
     background-color: #ffe066;
     color: black;
@@ -121,7 +121,7 @@ nav a:hover { text-shadow: 0 0 10px black; }
     min-height: 300px;
 }
 
-/* RIGHT COLUMN */
+/* ================= RIGHT COLUMN ================= */
 .right-column {
     width: 25%;
     display: flex;
@@ -143,7 +143,7 @@ nav a:hover { text-shadow: 0 0 10px black; }
     height: 1000px;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 footer {
     text-align: center;
     padding: 20px;
@@ -153,3 +153,4 @@ footer {
     border-top: 2px solid #ffe066;
 }
 
+    margin-top:
