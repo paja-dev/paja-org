@@ -9,17 +9,29 @@ body {
 /* ================= HEADER ================= */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     background-color: #ff0000;
     padding: 20px 25px;
     font-size: 2.5em;
     font-weight: bold;
+    gap: 15px;
+}
+
+header .header-gifs {
+    display: flex;
+    gap: 10px;
+}
+
+header .header-gifs img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 header .logo-text { color: yellow; }
-header .logo-rest { color: red; }
-header img { max-height: 60px; margin-left: 20px; }
+header .mao-img { max-height: 60px; margin-left: 10px; }
 
 /* ================= NAVBAR ================= */
 nav {
@@ -91,6 +103,33 @@ nav a:hover { text-shadow: 0 0 10px black; }
     font-size: 0.9em;
 }
 
+/* NUEVO CUADRO DE GIF */
+.gif-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.gif-panel img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* NUEVO CUADRO DE TEXTO FLASH */
+@keyframes flashColors {
+    0%, 50%, 100% { color: yellow; }
+    25%, 75% { color: red; }
+}
+
+.flash-text {
+    font-family: Impact, sans-serif;
+    font-size: 1.5em;
+    text-align: left;
+    animation: flashColors 1s infinite;
+    margin-top: 10px;
+}
+
 /* ================= MAIN COLUMN ================= */
 .main-column {
     flex: 1;
@@ -102,7 +141,8 @@ nav a:hover { text-shadow: 0 0 10px black; }
     color: yellow;
     padding: 25px;
     border-radius: 12px;
-    text-align: center;
+    text-align: left;
+    font-size: 1.2em;
 }
 
 .main-zone h2, .main-zone h3 {
@@ -119,6 +159,12 @@ nav a:hover { text-shadow: 0 0 10px black; }
     padding: 20px;
     border-radius: 12px;
     min-height: 300px;
+    margin-top: 20px;
+}
+
+/* Clase específica para la nueva caja si querés modificarla aparte */
+.new-box {
+    /* hereda todo de writing-space */
 }
 
 /* ================= RIGHT COLUMN ================= */
@@ -152,5 +198,3 @@ footer {
     margin-top: 40px;
     border-top: 2px solid #ffe066;
 }
-
-    margin-top:
