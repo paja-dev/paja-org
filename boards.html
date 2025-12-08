@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PAJA BOARDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER BOARDS ===== -->
+<header class="boards-header">
+    <img src="gif-left.gif" class="boards-gif" alt="GIF izquierdo">
+    <div class="boards-title">PAJA BOARDS!!!</div>
+    <img src="gif-right.gif" class="boards-gif" alt="GIF derecho">
+</header>
+
+<!-- ===== NAV ===== -->
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="boards.html">Paja Boards</a>
+</nav>
+
+<!-- ===== CONTENIDO ===== -->
+<div class="page-layout">
+    <div class="main-column">
+
+        <div class="main-zone">
+            <h2>BIENVENIDO A PAJA BOARDS</h2>
+            <p>
+                paja boards, la casa del pajero (nadie lo va a usar)<br>
+                anonimo, img, videos, sean libres
+            </p>
+        </div>
+
+        <!-- ===== LISTA DE BOARDS ===== -->
+        <div class="writing-space">
+            <h3>BOARDS DISPONIBLES</h3>
+
+            <p>
+                <strong>/gen/ — General</strong><br>
+                discusión general, larpeo, anime, política, memes y esquizoposteo libre
+            </p>
+            <p>
+                <a href="#gen">Entrar a /gen/</a>
+            </p>
+
+            <hr>
+
+            <p>
+                <strong>/nsfw/ — +18</strong><br>
+                el cunny moderado y nada de fetiches asquerosos
+            </p>
+            <p>
+                <a href="#nsfw">Entrar a /nsfw/ (WARNING)</a>
+            </p>
+        </div>
+
+        <!-- ===== REGLAS ===== -->
+        <div class="writing-space new-box">
+            <h3>REGLAS BÁSICAS (LEE, GORDO)</h3>
+            <ul>
+                <li>moderarse aun si dicen boludeces extremistas</li>
+                <li>no spam masivo</li>
+                <li>no romper el board a propósito (ni yo que hice el set up de todo esto se como posiblemente podrian hacer esto, pero no lo intenten - Basuras)</li>
+                <li>usen la cabeza sobre que postear igual</li>
+            </ul>
+
+            <p>
+                gordos reddit fuera<br>
+                chupame la bija elon, paja boards es el verdadero lugar sin censura
+            </p>
+        </div>
+
+        <!-- ===== EMBED BOARD ===== -->
+        <div id="boardEmbed" class="board-container">
+            <iframe
+                id="boardFrame"
+                class="board-iframe"
+                src="">
+            </iframe>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © paja.org – hay que ser tonto para que te baneemos de aca
+</footer>
+
+<!-- ===== JS EMBED ===== -->
+<script>
+function loadBoard() {
+    const hash = window.location.hash;
+    const embed = document.getElementById("boardEmbed");
+    const frame = document.getElementById("boardFrame");
+
+    if (hash === "#gen") {
+        frame.src = "https://pajaboards.infinityfree.me/gen/";
+        embed.style.display = "block";
+        embed.scrollIntoView({ behavior: "smooth" });
+    } 
+    else if (hash === "#nsfw") {
+        frame.src = "https://pajaboards.infinityfree.me/nsfw/";
+        embed.style.display = "block";
+        embed.scrollIntoView({ behavior: "smooth" });
+    } 
+    else {
+        frame.src = "";
+        embed.style.display = "none";
+    }
+}
+
+window.addEventListener("hashchange", loadBoard);
+window.addEventListener("load", loadBoard);
+</script>
+
+</body>
+</html>
+
