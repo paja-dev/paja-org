@@ -135,6 +135,34 @@ nav a:hover {
     padding: 5px 10px;
 }
 
+/* ================= WRITING BOXES ================= */
+.writing-space {
+    background-color: #ff0000;
+    color: yellow;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 25px;
+    font-size: 1.05em;
+}
+
+.writing-space h3 {
+    margin-top: 0;
+}
+
+.writing-space a {
+    color: #ffe066;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.writing-space a:hover {
+    text-shadow: 0 0 10px black;
+}
+
+.new-box {
+    border-top: 3px solid yellow;
+}
+
 /* ================= RIGHT COLUMN ================= */
 .right-column {
     width: 25%;
@@ -207,23 +235,4 @@ footer {
     height: 90px;
     width: auto;
     object-fit: contain;
-}
-
-/* ======================================================
-   ============ EMBED IMAGEBOARD (AGREGADO) =============
-   ====================================================== */
-
-.board-container {
-    display: none;
-    margin-top: 30px;
-    background-color: #000;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.board-iframe {
-    width: 100%;
-    height: 90vh;
-    border: none;
-    background-color: black;
 }

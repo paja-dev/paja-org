@@ -41,7 +41,7 @@
                 discusión general, larpeo, anime, política, memes y esquizoposteo libre
             </p>
             <p>
-                <a href="#gen">Entrar a /gen/</a>
+                 <a href="/gen/">Entrar a /gen/</a>
             </p>
 
             <hr>
@@ -51,7 +51,7 @@
                 el cunny moderado y nada de fetiches asquerosos
             </p>
             <p>
-                <a href="#nsfw">Entrar a /nsfw/ (WARNING)</a>
+                <a href="/nsfw/">Entrar a /nsfw/ (WARNING)</a>
             </p>
         </div>
 
@@ -71,48 +71,12 @@
             </p>
         </div>
 
-        <!-- ===== EMBED BOARD ===== -->
-        <div id="boardEmbed" class="board-container">
-            <iframe
-                id="boardFrame"
-                class="board-iframe"
-                src="">
-            </iframe>
-        </div>
-
     </div>
 </div>
 
 <footer>
     © paja.org – hay que ser tonto para que te baneemos de aca
 </footer>
-
-<!-- ===== JS EMBED ===== -->
-<script>
-function loadBoard() {
-    const hash = window.location.hash;
-    const embed = document.getElementById("boardEmbed");
-    const frame = document.getElementById("boardFrame");
-
-    if (hash === "#gen") {
-        frame.src = "https://pajaboards.infinityfree.me/gen/";
-        embed.style.display = "block";
-        embed.scrollIntoView({ behavior: "smooth" });
-    } 
-    else if (hash === "#nsfw") {
-        frame.src = "https://pajaboards.infinityfree.me/nsfw/";
-        embed.style.display = "block";
-        embed.scrollIntoView({ behavior: "smooth" });
-    } 
-    else {
-        frame.src = "";
-        embed.style.display = "none";
-    }
-}
-
-window.addEventListener("hashchange", loadBoard);
-window.addEventListener("load", loadBoard);
-</script>
 
 </body>
 </html>
